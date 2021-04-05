@@ -150,7 +150,6 @@ struct PlayPage: View {
     }
     func finishStage(){
         if(checkFinish()){
-            winGame = true
             hintAvailable = false
             cheatAvailable = false
             frenchSpeaker.setWords2Speak(words2speak: vocab[stage].fr)
@@ -161,6 +160,7 @@ struct PlayPage: View {
                     speakerFinish = !frenchSpeaker.synthesizer.isSpeaking
                     if(speakerFinish){
                         if(stage+1==targetStage){
+                            winGame = true
                             timer2.timerStop()
                             saveRecord(stageComplete: stage+1)
                             DispatchQueue.main.asyncAfter(deadline: .now()+0.5){

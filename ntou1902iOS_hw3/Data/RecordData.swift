@@ -36,7 +36,7 @@ class RecordsData: ObservableObject
         Record(id: UUID(), name: "demoPlayer_I", totalCount:10, correctCount: 0, completion:0.0/10.0, useTime: 888.17, date: Date()),
         Record(id: UUID(), name: "demoPlayer_J", totalCount:10, correctCount: 10, completion:10.0/10.0, useTime: 10.1, date: Date()),
     ]
-    /*let demoData =
+    let demoData1 =
     [
         Record(id: UUID(), name: "Alex", totalCount:100, correctCount: 100, completion:10.0/10.0, useTime: 10.1, date: Date()),
         Record(id: UUID(), name: "Jeniffer", totalCount:10, correctCount: 9, completion:9.0/10.0, useTime: 12.1, date: Date()),
@@ -48,7 +48,7 @@ class RecordsData: ObservableObject
         Record(id: UUID(), name: "May", totalCount:10, correctCount: 1, completion:1.0/10.0, useTime: 888.17, date: Date()),
         Record(id: UUID(), name: "Oscar", totalCount:10, correctCount: 0, completion:0.0/10.0, useTime: 888.17, date: Date()),
         Record(id: UUID(), name: "Gorden", totalCount:10, correctCount: 10, completion:10.0/10.0, useTime: 10.1, date: Date()),
-    ]*/
+    ]
     init(){
         if let recordsData = recordsData{
             let decoder = JSONDecoder()
