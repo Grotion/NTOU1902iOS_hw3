@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct ntou1902iOS_hw3App: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PageControl()
         }
     }
 }
