@@ -46,7 +46,7 @@ struct PlayPage: View {
     var winPlayer: AVPlayer{AVPlayer.sharedWinPlayer}
     func initialGame(){
         winGame = false
-        stage = 0
+        stage = 9
         showBigStage()
         vocabulary.shuffle()
         vocab.removeAll()

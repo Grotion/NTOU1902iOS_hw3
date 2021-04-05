@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import KeyboardObserving
 
 struct EnterNamePage: View {
     @Binding var currentPage:Pages
@@ -93,6 +94,7 @@ struct EnterNamePage: View {
                 }
             }
         }
+        .keyboardObserving()
     }
 }
 

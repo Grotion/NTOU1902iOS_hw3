@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,6 +25,7 @@
 		4A44535F261867290082050A /* Sad Trombone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4A44535E261867290082050A /* Sad Trombone.mp3 */; };
 		4A44536326186C330082050A /* French music no copyright.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4A44536226186C330082050A /* French music no copyright.mp3 */; };
 		4A5E717226146BD300650188 /* Vocabulary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5E717126146BD300650188 /* Vocabulary.swift */; };
+		4A8DF7C9261B781300B38FF4 /* KeyboardObserving in Frameworks */ = {isa = PBXBuildFile; productRef = 4A8DF7C8261B781300B38FF4 /* KeyboardObserving */; };
 		4A94C52D26156BF900CDB1B6 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A94C52C26156BF900CDB1B6 /* PageControl.swift */; };
 		4A94C538261575B900CDB1B6 /* RecordData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A94C537261575B900CDB1B6 /* RecordData.swift */; };
 		4A94C53B261579EF00CDB1B6 /* RecordRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A94C53A261579EF00CDB1B6 /* RecordRow.swift */; };
@@ -65,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A8DF7C9261B781300B38FF4 /* KeyboardObserving in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +176,9 @@
 			dependencies = (
 			);
 			name = ntou1902iOS_hw3;
+			packageProductDependencies = (
+				4A8DF7C8261B781300B38FF4 /* KeyboardObserving */,
+			);
 			productName = ntou1902iOS_hw3;
 			productReference = 4A2A611C26141ED600F6B861 /* ntou1902iOS_hw3.app */;
 			productType = "com.apple.product-type.application";
@@ -201,6 +206,9 @@
 				Base,
 			);
 			mainGroup = 4A2A611326141ED500F6B861;
+			packageReferences = (
+				4A8DF7C7261B781300B38FF4 /* XCRemoteSwiftPackageReference "KeyboardObserving" */,
+			);
 			productRefGroup = 4A2A611D26141ED600F6B861 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -436,6 +444,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4A8DF7C7261B781300B38FF4 /* XCRemoteSwiftPackageReference "KeyboardObserving" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nickffox/KeyboardObserving.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4A8DF7C8261B781300B38FF4 /* KeyboardObserving */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A8DF7C7261B781300B38FF4 /* XCRemoteSwiftPackageReference "KeyboardObserving" */;
+			productName = KeyboardObserving;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4A2A611426141ED500F6B861 /* Project object */;
 }

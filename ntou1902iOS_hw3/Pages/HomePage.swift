@@ -75,6 +75,7 @@ struct GrotionCopyright: View {
         VStack{
             Spacer()
             Text("© 2021 Grotion")
+            .foregroundColor(.white)
         }
     }
 }
