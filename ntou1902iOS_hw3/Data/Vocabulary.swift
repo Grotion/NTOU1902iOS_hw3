@@ -7,12 +7,6 @@
 
 import Foundation
 
-struct LetterWithIndex: Codable
-{
-    var letter:String
-    var index:Int
-}
-
 struct Vocabulary: Codable
 {
     var fr:String
